@@ -28,8 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m6asz5$f31p4bt88!xc0fh02@(2xo6#2m=_74xo&lkz1vs(9&)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 ALLOWED_HOSTS = ['8000-snoodyk-djangoblog-sk5hvdolpky.ws-eu108.gitpod.io', '.herokuapp.com']
@@ -132,3 +131,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://*.herokuapp.com"
+]
