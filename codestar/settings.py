@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-m6asz5$f31p4bt88!xc0fh02@(2xo6#2m=_74xo&lkz1vs(9&)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 ALLOWED_HOSTS = ['8000-snoodyk-djangoblog-sk5hvdolpky.ws-eu108.gitpod.io', '.herokuapp.com']
