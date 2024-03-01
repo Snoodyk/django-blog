@@ -14,11 +14,13 @@ from pathlib import Path
 import os
 import sys
 
-from django.contrib.messages import constants as messages
-
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
+    
+from django.contrib.messages import constants as messages
+
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
